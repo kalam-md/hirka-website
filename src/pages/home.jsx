@@ -32,14 +32,14 @@ export default function Home() {
 
   return (
     <header className="flex justify-center mb-12 relative md:mt-4">
-      <img src="./img/header2.png" alt="header" className="md:w-[650px] w-[360px]"/>
+      <img src="./img/header2.png" alt="header" className="2xl:w-[1000px] md:w-[650px] w-[360px]"/>
       
       {images.map((src, index) => (
         <img
           key={index}
           src={src}
           alt={`shoes-${index + 2}`} // Adding 2 to the index to match your image names
-          className={`mt-5 md:mt-0 w-[850px] absolute ${currentImageIndex === index ? '' : 'hidden'}`}
+          className={`mt-5 md:mt-0 w-[850px] 2xl:w-[1000px] absolute ${currentImageIndex === index ? '' : 'hidden'}`}
           onClick={handleImageClick}
         />
       ))}

@@ -36,17 +36,17 @@ export default function Navbar() {
         <img src={Logo} alt="logo" className="cursor-pointer ml-[250px] w-[80px]" />
       </div>
       <div className={`hidden md:flex mx-auto gap-[4.5rem] ${showMobileMenu ? 'hidden' : 'flex'}`}>
-        <span>
+        <span className="hover:text-slate-500">
           <Link to="/about">About</Link>
         </span>
-        <span>
+        <span className="hover:text-slate-500">
           <Link to="/product">Product</Link>
         </span>
-        <span>
+        <span className="">
           <Link to="/"><img src={Logo} alt="logo" className="w-[100px]" /></Link>
         </span>
         <span ref={dropdownRef}>
-          <span onClick={handleDropdownToggle} className="cursor-pointer">
+          <span onClick={handleDropdownToggle} className="cursor-pointer hover:text-slate-500">
             Blog
           </span>
           {showDropdown && (
@@ -56,7 +56,7 @@ export default function Navbar() {
             </div>
           )}
         </span>
-        <span>
+        <span className="hover:text-slate-500">
           <Link to="/contact">Contact</Link>
         </span>
       </div>
@@ -71,8 +71,8 @@ export default function Navbar() {
               </span>
               {showDropdown && (
                 <div className="dropdown-content absolute grid grid-cols-1 bg-white rounded-sm border border-red-700">
-                  <Link to="/blog/guide" className="hover:bg-slate-100 py-2 px-6">Guide</Link>
-                  <Link to="/blog/return-policy" className="hover:bg-slate-100 py-2 px-6">Return Policy</Link>
+                  <Link to="/blog/guide" className="hover:bg-slate-100 hover:text-slate-500 py-2 px-6">Guide</Link>
+                  <Link to="/blog/return-policy" className="hover:bg-slate-100 hover:text-slate-500 py-2 px-6">Return Policy</Link>
                 </div>
               )}
             </span>

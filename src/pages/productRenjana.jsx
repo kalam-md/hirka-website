@@ -3,13 +3,12 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import img1 from "/img/p1.png";
 import img2 from "/img/p2.png";
-import img3 from "/img/p3.png";
 import img4 from "/img/p4.png";
 import img5 from "/img/p5.png";
 import { AiFillStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
-export default function ProductTafiaro() {
+export default function ProductRenjana() {
   const settings = {
     dots: true,
     infinite: true,
@@ -19,14 +18,15 @@ export default function ProductTafiaro() {
   };
 
   const images = [
-    './img/p3.png',
-    './img/p5.png',
+    '../img/p4.png',
+    '../img/p4.png',
+    '../img/p4.png',
   ];
 
   return (
     <>
       <div className="md:p-16 p-10">
-        <div className="text-3xl font-nav md:mb-5 md:ml-[10rem]">Tafiaro SERIES</div>
+        <div className="text-3xl font-nav md:mb-5 md:ml-[10rem]">Renjana SERIES</div>
         <Slider {...settings}>
           {images.map((image, index) => (
             <div key={index} className=''>
@@ -37,20 +37,20 @@ export default function ProductTafiaro() {
 
         <div className="grid md:grid-cols-2 md:px-[10rem] md:mt-20 mt-10">
           <div className="flex gap-2">
-            <img src={img3} alt="" className='md:w-[180px] w-[140px] shadow-md'/>
-            <img src={img5} alt="" className='md:w-[180px] w-[140px] shadow-md'/>
+            <img src={img4} alt="" className='md:w-[180px] w-[140px] shadow-md'/>
+            <img src={img4} alt="" className='md:w-[180px] w-[140px] shadow-md'/>
           </div>
           <div className="mt-5">
-          Tafiaro Series Sepatu seri kasual yang dibuat Hirka. Berbahan kulit Kaki Ayam yang menjadi ciri khas Hirka sebagai aksen di sisi sepatu, membuat Tafiaro sangat mengundang pandang. Tafiaro adalah Paduan dari nilai estetik yang tinggi, kenyamanan yang maksimal, eksotis dan eksklusif.
+          Dalam diri seorang lelaki, ada hasrat dan kelembutan yang tersembunyi. Renjana adalah simbol dari lain dari seorang pria. Renjana adalah hasrat akan sebuah keindahan juga kelembutan yang dimiliki oleh setiap lelaki
           </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-3 md:px-[10rem] md:mt-20 mt-10">
           <div className="flex-col gap-2">
-            <Link to="/product/renjana">
-              <img src={img4} alt="poto" className='md:w-[480px] w-[340px] shadow-md'/>
+            <Link to="/product">
+              <img src={img5} alt="poto" className='md:w-[480px] w-[340px] shadow-md'/>
             </Link>
-            <p className='font-nav mt-2 text-xl'>Renjana</p>
+            <p className='font-nav mt-2 text-xl'>Tafiaro</p>
           </div>
           <div className="flex-col gap-2 my-7 md:my-0">
             <Link to="/product/jokka">
@@ -158,9 +158,9 @@ export default function ProductTafiaro() {
             <p className='text-xl font-nav'>Fauzan</p>
             <p>Wah, produknya bagus banget kualitas bahannya bagus</p>
             <div className="flex md:flex-row md:justify-between flex-col gap-3 mt-3">
-              <img src="./img/p1.png" alt="" className='w-[280px] shadow-md mt-3 md:mt-0'/>
-              <img src="./img/p2.png" alt="" className='w-[280px] shadow-md mt-3 md:mt-0'/>
-              <img src="./img/p3.png" alt="" className='w-[280px] shadow-md mt-3 md:mt-0'/>
+              <img src="../img/p1.png" alt="" className='w-[280px] shadow-md mt-3 md:mt-0'/>
+              <img src="../img/p2.png" alt="" className='w-[280px] shadow-md mt-3 md:mt-0'/>
+              <img src="../img/p3.png" alt="" className='w-[280px] shadow-md mt-3 md:mt-0'/>
             </div>
           </div>
 
@@ -170,8 +170,8 @@ export default function ProductTafiaro() {
             <p className='text-xl font-nav'>Rahmat</p>
             <p>Sepatunya elit, lokal tapi rasa internasional, mantapp</p>
             <div className="flex md:flex-row md:justify-start flex-col gap-8 mt-3">
-              <img src="./img/p3.png" alt="" className='w-[280px] shadow-md mt-3 md:mt-0'/>
-              <img src="./img/p4.png" alt="" className='w-[280px] shadow-md mt-3 md:mt-0'/>
+              <img src="../img/p3.png" alt="" className='w-[280px] shadow-md mt-3 md:mt-0'/>
+              <img src="../img/p4.png" alt="" className='w-[280px] shadow-md mt-3 md:mt-0'/>
             </div>
           </div>
         </div>
