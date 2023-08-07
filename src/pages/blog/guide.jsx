@@ -7,7 +7,7 @@ export default function Guide() {
 
       <div className="grid md:grid-cols-2 p-10 md:px-16 md:pt-16 gap-10">
         <div className="bg-red-100">
-          <img src="../img/product1.png" alt="people" className="bg-cover bg-center"/>
+          <img src="../img/guide1.png" alt="people" className="bg-cover bg-center"/>
         </div>
 
         <div className="-mt-8 md:-mt-0">
@@ -18,7 +18,7 @@ export default function Guide() {
 
       <div className="grid md:grid-cols-2 px-10 md:px-16 md:pt-10 md:pb-8 gap-10">
         <div className="bg-red-100">
-          <img src="../img/product1.png" alt="people" className="bg-cover bg-center"/>
+          <img src="../img/guide2.png" alt="people" className="bg-cover bg-center"/>
         </div>
 
         <div className="-mt-8 md:-mt-0">
@@ -29,7 +29,7 @@ export default function Guide() {
 
       <div className="grid md:grid-cols-2 p-10 md:px-16 md:pt-10 md:pb-8 gap-10">
         <div className="bg-red-100">
-          <img src="../img/product1.png" alt="people" className="bg-cover bg-center"/>
+          <img src="../img/guide3.png" alt="people" className="bg-cover bg-center"/>
         </div>
 
         <div className="-mt-8 md:-mt-0">
@@ -40,7 +40,7 @@ export default function Guide() {
 
       <div className="grid md:grid-cols-2 px-10 pb-8 md:px-16 md:pt-10 md:pb-8 gap-10">
         <div className="bg-red-100">
-          <img src="../img/product1.png" alt="people" className="bg-cover bg-center"/>
+          <img src="../img/guide4.png" alt="people" className="bg-cover bg-center"/>
         </div>
 
         <div className="-mt-8 md:-mt-0">

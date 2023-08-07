@@ -50,7 +50,7 @@ export default function Navbar() {
             Blog
           </span>
           {showDropdown && (
-            <div className="dropdown-content absolute grid grid-cols-1 bg-white rounded-sm border border-slate-700">
+            <div className="dropdown-content absolute grid grid-cols-1 bg-white rounded-sm border border-slate-700 z-[10]">
               <Link to="/blog/guide" className="hover:bg-slate-100 py-2 px-6">Guide</Link>
               <Link to="/blog/return-policy" className="hover:bg-slate-100 py-2 px-6">Return Policy</Link>
             </div>
@@ -61,7 +61,7 @@ export default function Navbar() {
         </span>
       </div>
       {showMobileMenu && (
-        <div className="mobile-menu bg-white rounded-sm border border-slate-700 z-[1] absolute top-16 left-0 ml-3">
+        <div className="mobile-menu bg-white rounded-sm border border-slate-700 z-[10] absolute top-16 left-0 ml-3">
           <div className="flex flex-col gap-4 py-4 px-6">
             <Link to="/about">About</Link>
             <Link to="/product">Product</Link>

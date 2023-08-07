@@ -19,8 +19,11 @@ export default function ProductAstakona() {
 
   const images = [
     '../img/p1.png',
-    '../img/p1.png',
-    '../img/p1.png',
+    '../img/astakona/1.png',
+    '../img/astakona/2.png',
+    '../img/astakona/3.png',
+    '../img/astakona/4.png',
+    '../img/astakona/5.png',
   ];
 
   return (

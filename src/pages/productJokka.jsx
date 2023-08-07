@@ -19,8 +19,11 @@ export default function ProductJokka() {
 
   const images = [
     '../img/p2.png',
-    '../img/p2.png',
-    '../img/p2.png',
+    '../img/jokka/j1.png',
+    '../img/jokka/j2.png',
+    '../img/jokka/j3.png',
+    '../img/jokka/j4.png',
+    '../img/jokka/j5.png',
   ];
 
   return (

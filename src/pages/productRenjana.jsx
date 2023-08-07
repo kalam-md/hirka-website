@@ -19,8 +19,11 @@ export default function ProductRenjana() {
 
   const images = [
     '../img/p4.png',
-    '../img/p4.png',
-    '../img/p4.png',
+    '../img/renjana/r1.png',
+    '../img/renjana/r2.png',
+    '../img/renjana/r3.png',
+    '../img/renjana/r4.png',
+    '../img/renjana/r5.png',
   ];
 
   return (
@@ -30,7 +33,7 @@ export default function ProductRenjana() {
         <Slider {...settings}>
           {images.map((image, index) => (
             <div key={index} className=''>
-              <img src={image} alt={`Image ${index + 1}`} className='aspect-video w-[900px] mx-auto shadow-xl'/>
+              <img src={image} alt={`Image ${index + 1}`} className='aspect-video w-[900px] bg-cover bg-center mx-auto shadow-xl'/>
             </div>
           ))}
         </Slider>

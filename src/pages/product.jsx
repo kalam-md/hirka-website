@@ -1,11 +1,12 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import img1 from "/img/p1.png";
-import img2 from "/img/p2.png";
-import img3 from "/img/p3.png";
-import img4 from "/img/p4.png";
-import img5 from "/img/p5.png";
+import image1 from "/img/p1.png";
+import image2 from "/img/p2.png";
+import image3 from "/img/p3.png";
+import image4 from "/img/p4.png";
+import image5 from "/img/p5.png";
+
 import { AiFillStar } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
@@ -20,7 +21,19 @@ export default function ProductTafiaro() {
 
   const images = [
     './img/p3.png',
-    './img/p5.png',
+    './img/tafiaro/2.png',
+    './img/tafiaro/3.png',
+    './img/tafiaro/4.png',
+    './img/tafiaro/5.png',
+    './img/tafiaro/6.png',
+    './img/tafiaro/1.png',
+    './img/tafiaro/7.png',
+    './img/tafiaro/8.png',
+    './img/tafiaro/9.png',
+    './img/tafiaro/10.png',
+    './img/tafiaro/11.png',
+    './img/tafiaro/12.png',
+    './img/tafiaro/13.png',
   ];
 
   return (
@@ -30,15 +43,15 @@ export default function ProductTafiaro() {
         <Slider {...settings}>
           {images.map((image, index) => (
             <div key={index} className=''>
-              <img src={image} alt={`Image ${index + 1}`} className='aspect-video w-[900px] mx-auto shadow-xl'/>
+              <img src={image} alt={`Image ${index + 1}`} className='aspect-video w-[900px] bg-cover bg-center mx-auto shadow-xl'/>
             </div>
           ))}
         </Slider>
 
         <div className="grid md:grid-cols-2 md:px-[10rem] md:mt-20 mt-10">
           <div className="flex gap-2">
-            <img src={img3} alt="" className='md:w-[180px] w-[140px] shadow-md'/>
-            <img src={img5} alt="" className='md:w-[180px] w-[140px] shadow-md'/>
+            <img src={image3} alt="" className='md:w-[180px] w-[140px] shadow-md'/>
+            <img src={image5} alt="" className='md:w-[180px] w-[140px] shadow-md'/>
           </div>
           <div className="mt-5">
           Tafiaro Series Sepatu seri kasual yang dibuat Hirka. Berbahan kulit Kaki Ayam yang menjadi ciri khas Hirka sebagai aksen di sisi sepatu, membuat Tafiaro sangat mengundang pandang. Tafiaro adalah Paduan dari nilai estetik yang tinggi, kenyamanan yang maksimal, eksotis dan eksklusif.
@@ -48,19 +61,19 @@ export default function ProductTafiaro() {
         <div className="grid md:grid-cols-3 gap-3 md:px-[10rem] md:mt-20 mt-10">
           <div className="flex-col gap-2">
             <Link to="/product/renjana">
-              <img src={img4} alt="poto" className='md:w-[480px] w-[340px] shadow-md'/>
+              <img src={image4} alt="poto" className='md:w-[480px] w-[340px] shadow-md'/>
             </Link>
             <p className='font-nav mt-2 text-xl'>Renjana</p>
           </div>
           <div className="flex-col gap-2 my-7 md:my-0">
             <Link to="/product/jokka">
-              <img src={img2} alt="" className='md:w-[480px] w-[340px] shadow-md'/>
+              <img src={image2} alt="" className='md:w-[480px] w-[340px] shadow-md'/>
             </Link>
             <p className='font-nav mt-2 text-xl'>Jokka</p>
           </div>
           <div className="flex-col gap-2">
             <Link to="/product/astakona">
-              <img src={img1} alt="" className='md:w-[480px] w-[340px] shadow-md'/>
+              <img src={image1} alt="" className='md:w-[480px] w-[340px] shadow-md'/>
             </Link>
             <p className='font-nav mt-2 text-xl'>Astakona</p>
           </div>
